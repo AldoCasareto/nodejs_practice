@@ -36,6 +36,7 @@ export function loadPlanetsData() {
   });
 }
 
-export default {
-  planets: habitablePlanets,
-};
+export function getAllPlanets() {
+  console.log(habitablePlanets);
+  return habitablePlanets;
+}

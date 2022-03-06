@@ -1,7 +1,7 @@
-import habitablePlanets from '../../models/planets.model.js';
+import { getAllPlanets } from '../../models/planets.model.js';
 
-function getAllPlanets(req, res) {
-  return res.status(200).json(habitablePlanets);
+function httpGetAllPlanets(req, res) {
+  return res.status(200).json(getAllPlanets());
 }
 
-export default getAllPlanets;
+export default httpGetAllPlanets;
