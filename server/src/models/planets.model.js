@@ -31,6 +31,7 @@ export function loadPlanetsData() {
 
       .on('end', () => {
         console.log(`Found ${habitablePlanets.length} habitable planets.`);
+        console.log(habitablePlanets);
         resolve();
       });
   });
